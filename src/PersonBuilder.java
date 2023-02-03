@@ -1,9 +1,9 @@
 public class PersonBuilder {
 
-    String name;
-    String surName;
-    int age;
-    String address;
+    protected String name;
+    protected String surName;
+    protected int age;
+    protected String address;
 
     public PersonBuilder setName(String name) {
         this.name = name;
