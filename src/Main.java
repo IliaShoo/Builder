@@ -14,17 +14,17 @@ public class Main {
 
         mom.happyBirthday();
 
-        System.out.println("The mom "+ mom + " has son " + son);
+        System.out.println("The mom " + mom + " has son " + son);
 
-        try{
+        try {
             new PersonBuilder().setAge(-199).build();
-        }catch (IllegalArgumentException e){
+        } catch (IllegalArgumentException e) {
             e.printStackTrace();
         }
 
-        try{
+        try {
             new PersonBuilder().build();
-        }catch (IllegalStateException e){
+        } catch (IllegalStateException e) {
             e.printStackTrace();
         }
 

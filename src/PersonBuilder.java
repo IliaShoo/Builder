@@ -17,7 +17,7 @@ public class PersonBuilder {
     }
 
     public PersonBuilder setAge(int age) {
-        if(age<0){
+        if (age < 0) {
             throw new IllegalArgumentException("Enter correct age");
         }
         this.age = age;
@@ -30,7 +30,7 @@ public class PersonBuilder {
     }
 
     public Person build() {
-        if(name ==null||surName == null){
+        if (name == null || surName == null) {
             throw new IllegalStateException("Enter name and(or) surname");
         }
         return new Person(this.name, this.surName, this.age, this.address);

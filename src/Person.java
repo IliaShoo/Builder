@@ -39,30 +39,35 @@ public class Person {
     public String getName() {
         return name;
     }
+
     public String getSurname() {
         return surname;
     }
+
     public Integer getAge() {
         return age;
     }
+
     public String getAddress() {
         return city;
     }
+
     public void setAddress(String address) {
         address = city;
     }
+
     public void happyBirthday() {
-        if(hasAge()== true){
+        if (hasAge() == true) {
             age++;
         }
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return getName() + " " + getSurname() + " " + getAge() + " " + getAddress();
     }
 
-    public PersonBuilder newChildBuilder(){
+    public PersonBuilder newChildBuilder() {
         return new PersonBuilder().
                 setSurname(getSurname()).
                 setAddress(getAddress());
